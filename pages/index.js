@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import EventList from '@/components/events/event-list';
+import { getFeaturedEvents } from '@/dummy-data';
 
 export default function Home() {
+  const featuredEvents = getFeaturedEvents();
   return (
-    <>
-      <h1>Hello, World!!</h1>
-    </>
+    <div>
+      <EventList items={featuredEvents}></EventList>
+    </div>
   );
 }
