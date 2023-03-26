@@ -38,13 +38,11 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const events = await getAllEvents();
-  console.log('events', events);
   const paths = events.map((event) => ({
     params: {
       eventId: event.id,
     },
   }));
-  console.log('paths', paths);
   return {
     paths: paths,
     fallback: false,

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap');
+@import './colors.module.scss';
 
 * {
   box-sizing: border-box;
@@ -22,6 +23,7 @@ h6 {
   position: fixed; /* or absolute */
   top: 50%;
   left: 50%;
+  color: $dark-grey;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
