@@ -39,7 +39,7 @@ function EventsSearch(props) {
           </select>
         </div>
       </div>
-      <Button>Find Events</Button>
+      <Button variant='contained'>Find Events</Button>
     </form>
   );
 }

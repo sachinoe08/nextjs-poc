@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import classes from './button.module.css';
+import Button from '@mui/material/Button';
 
-function Button(props) {
+function MUIButton(props) {
   if (props.link) {
     return (
       <Link href={props.link} className={classes.btn}>
@@ -10,10 +11,10 @@ function Button(props) {
     );
   }
   return (
-    <button className={classes.btn} onClick={props.onClick}>
+    <Button variant='contained' onClick={props.onClick}>
       {props.children}
-    </button>
+    </Button>
   );
 }
 
-export default Button;
+export default MUIButton;
