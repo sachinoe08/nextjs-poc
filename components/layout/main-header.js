@@ -7,6 +7,7 @@ function MainHeader() {
       <div className={classes.logo}>
         <Link href={'/'}> Next Events</Link>
         <Link href={'/users'}> Users</Link>
+        <Link href={'/posts'}> Posts</Link>
       </div>
       <nav className={classes.navigation}>
         <ul>
