@@ -1,4 +1,6 @@
-![Scheme](logo/Readme-image.png)
+<p align="center">
+  <img width="850" height="250" src="logo/Readme-image.png">
+</p>
 
 
 
@@ -102,4 +104,3 @@ terraform destroy -var-file="../prod-env/prod.tfvars"      #For Production Envir
 ## Authors
 
 - [@Devendra Joshi](https://www.github.com/oedeven)
-
